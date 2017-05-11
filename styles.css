@@ -1,0 +1,279 @@
+body {
+	font-family: 'Catamaran', sans-serif;
+	background-color: white;
+	font-size: 13pt;
+	line-height: 16pt;
+	color: black;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+}
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#about {
+	display: inline;
+}
+
+#contact {
+	display: inline;
+}
+#headinfo {
+	padding-left: 4%;
+	position: fixed;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+	z-index: 3;		 
+}
+
+#content-about {
+	border-left: thick solid;
+	padding: 35px;
+	position: absolute;
+	top: 100px;
+	background-color: white;
+	font-size: 10pt;
+	line-height: 13pt;
+	display: none;
+	width: 70%;
+	margin: 0 15%;
+	z-index: 4;
+}
+
+#content-contact {
+	border-left: thick solid;
+	padding: 35px;
+	position: absolute;
+	top: 100px;
+	background-color: white;
+	font-size: 10pt;
+	line-height: 13pt;
+	display: none;
+	width: 70%;
+	margin: 0 15%;
+	z-index: 4;
+}
+
+
+#top_line {
+	background-color: black;
+	height: 17pt;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 6;
+}
+
+#nametotop {
+   font-weight: bold;
+   background-color: transparent;
+   border: none;
+   font-size: 13pt;
+   color: black;
+   cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+}
+
+
+a{
+	text-decoration:none;
+	color: black;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+}
+
+
+.content {
+	position: relative;
+	max-width: 2000px;
+	margin: 0 auto;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+
+}
+
+.overview {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+	max-width: 100%;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+	overflow: auto;
+	margin: 10% auto;	
+}
+
+.portfolio-item {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	float: left;
+	min-width: 31.33%;
+	height: 2000px;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+}
+
+
+
+.portfolio-item:hover {
+	
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+}
+
+/* scrollable section */
+
+/* 	This is a div with a height slightly larger than the <section> height: 420px.  
+	Overflow is set to auto, so it will show a scrollbar when the content is larger than this div.
+	However, the scrollbar will not be visible because it falls below the lower border of the <section> that containts it */
+.scrollbarhide {
+	height: 360px;
+	overflow: auto;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+	
+}
+
+/* 	This is the scrollable content. It has a width that is much larger than the browser/viewport/screen width,
+	so that it is scrollable */
+.scroller {
+	width:3900px;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+
+}
+
+
+.image-item {
+	float: left;
+	width: 250px;
+	height: 300px;
+	margin: 1%;
+	padding: 6px;
+	position: relative;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+
+}
+
+.image-item p {
+	position: absolute;
+	bottom: 0px;
+	top:10px;
+	right: 15px;
+	color:white;
+	display: none;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+
+}
+
+.image-item img {
+	max-width: 100%;
+	max-height: 100%;
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+
+}
+
+
+/* detail section */
+
+#left-line {
+	width:5px; 
+	height:100%;
+	background-color: black;
+	z-index: 20;
+}
+.detail {
+/*	border: 1px solid #ddd;
+*/	/*border: none;*/
+	border-left: thick solid;
+	padding: 35px;
+	position: absolute;
+	top: 100px;
+	background-color: white;
+	font-size: 10pt;
+	line-height: 13pt;
+	display: none;
+	width: 70%;
+	margin: 0 15%;
+	z-index: 4;
+-webkit-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+-moz-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+		
+}
+
+.scrollable {
+	height: 500px;
+	width: 800px;
+	overflow: auto;
+}
+
+.detail h1 {
+}
+
+.detail p {
+}
+
+.detail .artwork {
+	width: 100%;
+}
+
+#project1 {
+	margin-left: 6%;
+	margin-top: -120%;
+	
+}
+#project2 {
+	margin-left: 72%;
+	margin-top: -90%;
+}
+#project3 {
+    margin-left: 20%;
+	margin-top: -105%;	
+}
+#project4{
+	margin-top: -112%;
+	margin-left: 10%;
+}
+#project5{
+	margin-top: -115%;
+	margin-left: 57%;
+}
+
+#project6{
+	margin-top: -105%;
+	margin-left: 3%;
+}
+
+#project7{
+	margin-top: 2%;
+	margin-left: 48%;
+}
+
+#project8{
+	margin-top: -96%;
+	margin-left: 75%;
+}
+
+#project9{
+	margin-top: -167%;
+	margin-left: 57%;
+}
+
+#project10{
+	margin-top: -87%;
+	margin-left: 11%;
+}
+
+.close-button {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: url("icon.png") no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(255,255,255,0);
+	cursor:url(https://4.bp.blogspot.com/-nW2c8niX0m8/Vuue2EG6EOI/AAAAAAAABhY/RU3xB6E7blQewm6A9EzbvyuuMCyVm1Eeg/s1600/cursor.png), progress;
+
+}
+
+.close-button:hover {
+	border: 1px solid black;
+}
