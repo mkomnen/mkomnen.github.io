@@ -169,7 +169,9 @@ hr {
             box-sizing: border-box;
 
 	max-width: 100%;
-	overflow: auto;
+	overflow: scroll;
+	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
 .portfolio-item img{
