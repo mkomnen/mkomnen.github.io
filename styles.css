@@ -1,18 +1,17 @@
 * {
 	margin:0;
 	padding:0;
-	cursor: move;
+
 }
 
 body {
-	/*font-family: 'Libre Baskerville', serif;*/
-	/*font-family: 'Spectral SC', serif;*/
-	font-family: 'Lato', sans-serif;
-	background-color: black;
+
+	font-family: 'droid-sans', sans-serif;;
 	font-weight: 300;
+	background-color: black;
 	font-size: 9pt;
 	line-height: 16pt;
-	color: black;
+	color: red;
 	}
 
 
@@ -21,6 +20,35 @@ a{
 	color: red;
 	text-shadow: 2px 2px #fcb3ba;
 	}
+
+
+.descriptiontext {
+
+	-moz-column-count: 2;
+
+	-moz-column-gap: 45px;
+
+	-webkit-column-count: 2;
+
+	-webkit-column-gap: 45px;
+
+	column-count: 2;
+
+	column-gap: 45px;
+
+	-ms-word-break: break-all;
+
+		word-break: break-word;
+
+-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+			 hyphens: auto;
+
+
+	}
+
+
+
 
 #headinfo {
 	padding-left: 2%;
@@ -37,12 +65,13 @@ a{
 
 #komnen {
 	padding-left: 29%;
-	padding-top: 1.5%;
+	padding-top: 1.7%;
 	position: fixed;
 	font-family: 'Mandrel-NorReg', serif;
-	font-variant: small-caps;
-	letter-spacing: 0.5px;
-	font-size: 15pt;
+	/*font-variant: small-caps;*/
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	font-size: 13pt;
 	font-weight: 500;
 	margin-left: -2%;
 	color: white;
@@ -55,7 +84,7 @@ a{
 	position: fixed;
 	font-size: 9pt;
 	line-height: 11pt;
-	width: 6%;
+	width: 7%;
 	color: white;
 	letter-spacing: 0.3px;
 	z-index: 200;
@@ -118,9 +147,10 @@ hr {
 
 
 .title {
-	font-variant: small-caps;
+	text-transform: uppercase;
+	color: black;
 	font-family: 'Mandrel-NorReg', serif;
-	font-size: 13pt;
+	font-size: 12pt;
 }
 
 
@@ -234,11 +264,19 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 
 .date {
 	font-family: 'Mandrel-NorReg', serif;
-	color: #ff0000;
+	color: black;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 	baseline-shift: 40%;
 
+}
+
+.underscore {
+	font-family: 'Mandrel-NorReg', serif;
+	color: red;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	baseline-shift: 40%;
 }
 
 .scrollable {
@@ -476,7 +514,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	line-height: 13pt;
 	display: none;
 	margin-top: 17%;
-	margin-left: 37%;
+	margin-left: 40%;
 	margin-right: 50%;
 	z-index: 4;
 	overflow: scroll;
@@ -492,7 +530,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	border-top: thin solid;
 	border-bottom: thin solid;
 	border-width: 10px;
-	height: 50vh;
+	height: 55vh;
 	width: 50vh;
 	padding: 35px;
 	position: fixed;
@@ -501,8 +539,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	font-weight: 400;
 	line-height: 13pt;
 	display: none;
-	margin-top: 13%;
-	margin-left: 30%;
+	margin-top: 8%;
+	margin-left: 37%;
 	margin-right: 35%;
 	z-index: 4;
 	overflow: scroll;
