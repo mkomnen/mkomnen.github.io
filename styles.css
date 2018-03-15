@@ -4,6 +4,8 @@
 
 }
 
+html, body { height: 100% }
+html { background: red }
 body {
 
 	font-family: 'droid-sans', sans-serif;;
@@ -80,7 +82,7 @@ a{
 
 #about {
 	margin-left: 83%;
-	margin-top: 2%;
+	margin-top: 2% ;
 	position: fixed;
 	font-size: 9pt;
 	line-height: 11pt;
@@ -170,24 +172,26 @@ hr {
 
 	max-width: 100%;
 	overflow: none;
-	
+
 }
+.portfolio-item {
 
-.portfolio-item img{
-	-webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-    position: relative;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+}
+.portfolio-item img {
 	float: left;
-	overflow: hidden;
-	height: 100vh;
+	height: auto;
+	max-width: 100%;
 	margin-top: 40px;
+
 }
+.portfolio-item img.right { float: right }
 
 
 
-.portfolio-item: img hover {
+.portfolio-item img:hover {
 z-index: 40;
 -webkit-box-shadow: 9px 5px 5px -2px rgba(255,0,0,0);
 -moz-box-shadow: 9px 5px 5px -2px rgba(255,0,0,0);
@@ -251,7 +255,7 @@ box-shadow: 9px 5px 5px -2px rgba(255,0,0,0);
 	line-height: 14pt;
 	display: none;
 	overflow: scroll;
-	width: 95vh;
+	width: 80% auto;
 	height: 80vh;
 	margin: 0 18%;
 	z-index: 4;
@@ -315,8 +319,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project1 {
 	position: relative;
 	float: right;
-	margin: 40px;
-	margin-top: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(44800% / 893 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -325,9 +329,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project2 {
 	position: relative;
 	float: right;
-	margin: 80px;
-	margin-bottom: 60px;
-	margin-top: 30px;
+	padding: 30px 30px 30px 15px;
+	width: calc(44500% / 893 - 4px);
 
 	 -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -337,8 +340,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 
 	position: relative;
 	float: left;
-	margin: 30px;
-	margin-top: 40px;
+	padding: 30px 15px 30px 30px;
+	width: calc(45500% / 980 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -347,8 +350,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project4{
 	position: relative;
 	float: right;
-	margin: 30px;
-	margin-top: 40px;
+	padding: 30px 30px 30px 15px;
+	width: calc(52500% / 980 - 4px);
 
 	 -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -357,8 +360,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project5{
 	position: relative;
 	float: left;
-	margin: 40px;
-	margin-top: 40px;
+	padding: 30px 15px 30px 30px;
+	width: calc(39500% / 1000 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -367,17 +370,21 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project6{
 	position: relative;
 	float: right;
-	margin: 30px;
-	margin-top: 40px;
+	padding: 30px 30px 30px 15px;
+	width: calc(60500% / 1000 - 4px);
 
 	 -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
+
+
+
 #project7{
 	position: relative;
 	float: left;
-	margin: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(54500% / 940 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -386,16 +393,21 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project8{
 	position: relative;
 	float: right;
-	margin: 30px;
+	padding: 30px 30px 30px 15px;
+	width: calc(39500% / 940 - 4px);
 
  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
+
+
+
 #project9{
 	position: relative;
 	float: left;
-	margin: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(61500% / 960 - 4px);
 
  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -404,18 +416,23 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project10{
 	position: relative;
 	float: right;
-	margin: 30px;
+	padding: 30px 30px 30px 15px;
+	width: calc(34500% / 960 - 4px);
 
 	 -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 
 }
 
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
 #project11{
 	position: relative;
 	float: right;
-	margin: 20px;
-	margin-left: 30px;
+	padding: 30px 30px 30px 15px;
+	width: calc(48500% / 1000 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -424,16 +441,22 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project12{
 	position: relative;
 	float: left;
-	margin: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(51500% / 1000 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
 #project13{
 	position: relative;
 	float: right;
-	margin: 30px;
+	padding: 30px 30px 30px 15px;
+	width: calc(46500% / 1010 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -442,26 +465,37 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project14{
 	position: relative;
 	float: left;
-	margin: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(54500% / 1010 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
+
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
 
 #project15{
 	position: relative;
 	float: left;
-	margin: 30px;
-	margin-top: 0;
+	padding: 30px 15px 30px 30px;
+	width: calc(99500% / 995 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
+
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
 #project16{
 	position: relative;
 	float: left;
-	margin: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(49500% / 1010 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -470,17 +504,24 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project17{
 	position: relative;
 	float: right;
-	margin: 30px;
-	margin-top: -45px;
+	padding: 30px 30px 30px 15px;
+	width: calc(51500% / 1010 - 4px);
+
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
+
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
 #project18{
 	position: relative;
 	float: right;
-	margin: 30px;
+	padding: 30px 30px 30px 15px;
+	width: calc(44500% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -489,11 +530,13 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project19{
 	position: relative;
 	float: left;
-	margin: 30px;
+	padding: 30px 15px 30px 30px;
+	width: calc(52500% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
+
 
 
 
@@ -506,7 +549,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	border-bottom: thin solid;
 	border-width: 10px;
 	height: 30vh;
-	width: 30vh;
+	width: 30% auto;
 	padding: 35px;
 	position: fixed;
 	background-color: white;
@@ -532,7 +575,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	border-bottom: thin solid;
 	border-width: 10px;
 	height: 58vh;
-	width: 50vh;
+	width: 50% auto;
 	padding: 35px;
 	position: fixed;
 	background-color: white;
