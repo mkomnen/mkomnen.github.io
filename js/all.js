@@ -1,4 +1,4 @@
-
+$( function( ) {
 console.log('hi');
 // activate the close button
 $(".close-button").click(function(){
@@ -27,6 +27,8 @@ $(".close-button").click(function(){
 	$("#content-").css("visibility", "visible");
 
 	console.log('close')
+
+
 });
 
 
@@ -154,4 +156,12 @@ $(".close").click(function(e){
 	$("#content-").css("visibility", "visible");
 
 	$(".close").addClass("invisible");
+
+	$( '#coverimages' ).focus( );
+	document.getElementById("coverimages").focus();
 });
+
+
+$("img.lazyload").lazyload();
+
+} );
