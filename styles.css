@@ -116,11 +116,11 @@ a{
 
 #coverimages {
 	background-color: white;
-	/*overflow-y: hidden;*/
-	/*position: fixed;*/
 	float: left;
-	 top: 6%;
-	 left: 15%;
+	border: red solid;
+	border-width: 3px;
+	 top: 0%;
+	 left: 0%;
     bottom:0;
     position:fixed;
     overflow-y:scroll;
