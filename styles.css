@@ -79,7 +79,10 @@ a{
 	float: left;
 	background-color: black;
 	border: thin solid black;
-	border-width: 20px;
+	border-width: 16px;
+	border-top-width: 19px;
+	border-left-width: 50px;
+	border-right-width: 50px;
 	z-index: 100;
 }
 
