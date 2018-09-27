@@ -165,3 +165,25 @@ $(".close").click(function(e){
 $("img.lazyload").lazyload();
 
 } );
+
+//
+// ---writings page------
+
+
+$(".navigation a").click(function(){
+
+	console.log("clicked: " + $(this).attr('id'));
+
+	showtext($(this).attr('id'))
+});
+
+function showtext(id) {
+	// hide all content sections
+	$(".word-item").hide();
+
+	// show the one with  content-[id]
+	$("#text-" + id).show();
+}
+
+// show the first content section
+showtext('amsterdam');
