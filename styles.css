@@ -571,6 +571,28 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 }
 
 
+#project21{
+	position: relative;
+	float: right;
+	padding: 30px 30px 30px 15px;
+	width: calc(43000% / 1010 - 4px);
+
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
+
+#project22{
+	position: relative;
+	float: left;
+	padding: 30px 15px 30px 30px;
+	width: calc(55000% / 1000 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
 
 
 
