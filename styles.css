@@ -593,6 +593,56 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
+#project23{
+	position: relative;
+	float: left;
+	padding: 30px 15px 30px 30px;
+	width: calc(42500% / 970 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
+#project24{
+	position: relative;
+	float: right;
+	padding: 30px 30px 30px 15px;
+	width: calc(52500% / 970 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
+#project25{
+	position: relative;
+	float: left;
+	padding: 30px 15px 30px 30px;
+	width: calc(42500% / 970 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
+#project26{
+	position: relative;
+	float: right;
+	padding: 30px 30px 30px 15px;
+	width: calc(52500% / 970 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
+#project27{
+	position: relative;
+	float: right;
+	padding: 30px 15px 30px 30px;
+	width: calc(99500% / 995 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
 
 
 
