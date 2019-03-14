@@ -8,15 +8,15 @@ html, body { height: 100% }
 html { background: black }
 body {
 
-	font-family: 'droid-sans', sans-serif;;
+	font-family: 'droid-sans', sans-serif;
 	font-weight: 300;
 	background-color: #131313;
 	border: red solid;
 	border-width: 1px;
 	height: 100vh;
 	font-size: 9pt;
-	line-height: 16pt;
-	color: red;
+	line-height: 10pt;
+	color: black;
 
 	}
 
@@ -292,7 +292,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 
 .date {
 	font-family: 'Mandrel-NorReg', serif;
-	color: black;
+	color: red;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 	baseline-shift: 40%;
@@ -820,15 +820,18 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 }
 
 #maintext {
-	background-color: black;
+	background-color: #adadad;
 	letter-spacing: 0.3px;
-	border: thin solid black;
+	border-left: thin solid black;
+	border-top: thin solid #adadad;
+	border-bottom: thin solid #adadad;
+	border-right: thin solid black;
 	border-width: 20px;
 	max-width: 90%;
 	font-size: 9pt;
 	line-height: 13pt;
 	width: 58%;
-	color: white;
+	color: black;
 	z-index: 3;
 	top: 17vh;
 	 left: 60vh;
@@ -851,7 +854,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 
 .text-title{
 	text-transform: uppercase;
-	color: white;
+	color: black;
 	font-family: 'Mandrel-NorReg', serif;
 	font-size: 12pt;
 }
