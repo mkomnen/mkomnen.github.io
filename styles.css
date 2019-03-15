@@ -820,11 +820,11 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 }
 
 #maintext {
-	background-color: #adadad;
+	background-color: #e8e8e8;
 	letter-spacing: 0.3px;
 	border-left: thin solid black;
-	border-top: thin solid #adadad;
-	border-bottom: thin solid #adadad;
+	border-top: thin solid #e8e8e8;
+	border-bottom: thin solid #e8e8e8;
 	border-right: thin solid black;
 	border-width: 20px;
 	max-width: 90%;
