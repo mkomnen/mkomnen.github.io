@@ -11,8 +11,8 @@ body {
 	font-family: 'droid-sans', sans-serif;
 	font-weight: 300;
 	background-color: #131313;
-	border: red solid;
-	border-width: 1px;
+	/*border-top: red solid;*/
+	/*border-width: 1px;*/
 	height: 100vh;
 	font-size: 9pt;
 	line-height: 10pt;
@@ -124,7 +124,8 @@ a{
 #coverimages {
 	/*background-color: #131313;*/
 	float: left;
-	border: red solid;
+	border-top: red solid;
+	border-bottom: red solid;
 	border-width: 1px;
 	width:100%;
 	 top: 0%;
