@@ -11,8 +11,9 @@ body {
 	font-family: 'droid-sans', sans-serif;
 	font-weight: 300;
 	background-color: #131313;
-	/*border-top: red solid;*/
-	/*border-width: 1px;*/
+	border-top: red solid;
+	border-bottom: red solid;
+	border-width: 1px;
 	height: 100vh;
 	font-size: 9pt;
 	line-height: 10pt;
@@ -206,8 +207,8 @@ hr {
 	height: auto;
 	max-width: 100%;
 	margin-top: 40px;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%)contrast(150%) brightness(300%);
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%)contrast(150%) brightness(100%);
 
 
 }
@@ -280,7 +281,7 @@ z-index: 40;
 	display: none;
 	overflow: scroll;
 	width: calc(74% - 100px);
-	height: 80vh;
+	height: 78vh;
 	margin: 0 13%;
 	z-index: 4;
 	font-weight: 400;
@@ -555,7 +556,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
-	width: calc(52500% / 970 - 4px);
+	width: calc(50000% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -576,7 +577,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
-	width: calc(43000% / 1010 - 4px);
+	width: calc(44000% / 1010 - 4px);
 
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
@@ -598,7 +599,7 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
-	width: calc(42500% / 970 - 4px);
+	width: calc(49000% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -607,8 +608,8 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project24{
 	position: relative;
 	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(52500% / 970 - 4px);
+	padding: 30px 15px 30px 100px;
+	width: calc(46000% / 1010 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -617,8 +618,9 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 #project25{
 	position: relative;
 	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(42500% / 970 - 4px);
+	/*margin-top: 30px;*/
+	padding: 30px 30px 30px 100px;
+	width: calc(52000% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
@@ -626,24 +628,35 @@ box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 
 #project26{
 	position: relative;
+	float: left;
+	margin-top: 100px;
+	padding: 30px 30px 30px 30px;
+	width: calc(45000% / 1010 - 4px);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
+ 	 filter: drop-shadow(2px 2px 2px #000000);
+}
+
+
+#project27{
+	position: relative;
 	float: right;
-	padding: 30px 30px 30px 15px;
+	padding: 30px 30px 30px 90px;
 	width: calc(52500% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
 
-#project27{
+#project28{
 	position: relative;
-	float: right;
+	float: left;
 	padding: 30px 15px 30px 30px;
-	width: calc(99500% / 995 - 4px);
+	width: calc(42500% / 970 - 4px);
 
 	  -webkit-filter: drop-shadow(2px 2px 2px #000000);
  	 filter: drop-shadow(2px 2px 2px #000000);
 }
-
 
 
 
