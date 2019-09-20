@@ -186,7 +186,7 @@ a{
 }
 
 #coverimages {
-	background-color: #1a1a1a;
+	background-color: #f3f3f3;
 	 /*background-image: url("back1.png");
 	 background-size: 200vh;*/
 	float: left;
@@ -252,7 +252,7 @@ opacity: 1;
 	background-color: black;
 	font-size: 8pt;
 	line-height: 12pt;
-	color: #828282;
+	color: #ababab;
 	z-index: 3;
 	top: 52vh;
     bottom:5vh;
