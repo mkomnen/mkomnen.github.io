@@ -133,25 +133,30 @@ a{
 
 
 #location{
-	margin-left: 5vh;
+	margin-left: 2%;
 	position: fixed;
 	font-size: 7.5pt;
-	line-height: 11pt;
-	width: 25vh;
+	line-height: 11.5pt;
+	width: 13%;
+	height: 18%;
 	top: 8vh;
+	/*bottom: 75vh;*/
 	color: #ababab;
 	letter-spacing: 0.3px;
 	z-index: 200;
+	overflow-y:scroll;
+	overflow-x:hidden;
 }
 
 
 #about {
-	margin-left: 35vh;
+	margin-left: 18%;
 	font-size: 7.5pt;
 	line-height: 11.5pt;
 	top: 8vh;
-	width: 28vh;
-	bottom: 75vh;
+	width: 18%;
+	height: 18%;
+	/*bottom: 75vh;*/
 	color: #ababab;
 	letter-spacing: 0.3px;
 	z-index: 200;
@@ -192,7 +197,11 @@ a{
 	float: right;
 
 	margin-top: 29vh;
-	width:100%;
+	/*border-left: solid white;
+	border-right: solid white;
+	border-width: 4.6vh;*/
+
+	width: 100%;
 	 top: 0%;
 	 left: 0%;
     bottom:0;
@@ -258,8 +267,9 @@ opacity: 1;
 	color: #ababab;
 	z-index: 3;
 	top: 65vh;
-    bottom:1.5vh;
-		width: 62vh;
+		left: 0.5%;
+    bottom:0vh;
+		width: 34%;
     position:fixed;
     overflow-y:scroll;
     overflow-x:hidden;
