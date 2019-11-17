@@ -782,6 +782,24 @@ z-index: 40;
 }
 
 
+#project29{
+	position: relative;
+	float: right;
+	padding: 30px 15px 30px 30px;
+	width: calc(99500% / 995 - 4px);
+
+	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
+}
+
+
+
+
+
+
+
+
+
 
 
 #content-writings {
