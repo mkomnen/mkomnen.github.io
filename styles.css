@@ -23,8 +23,8 @@ body {
 
 a{
 	text-decoration:none;
-	color: red;
-	text-shadow: 2px 2px #fcb3ba;
+	color: white;
+	
 	}
 
 
@@ -291,7 +291,7 @@ hr {
 
 .title {
 	text-transform: uppercase;
-	color: black;
+	color: #ababab;
 	font-family: 'Cinzel', serif;
 	font-size: 12pt;
 }
@@ -382,35 +382,30 @@ z-index: 40;
 
 /* detail section */
 
-/*#left-line {
-	width:50px;
-	height:100%;
-	background-color: black;
-	z-index: 20;
-}*/
+
 .detail {
-	border-left: thick solid;
+	/* border-left: thick solid;
 	border-width: 15px;
-	border-color: black;
+	border-color: black; */
 	padding: 50px;
 	position: absolute;
 	align-self: center;
 	align-items: center;
-	background-color: white;
+	background-color: black;
 	font-size: 8pt;
 	line-height: 12pt;
-	color: #212121;
+	color: #ababab;
 	display: none;
 	overflow: scroll;
-	margin-top: 70vh;
-	/*top: 50vh;*/
-	bottom: 5vh;
-	width: calc(65% - 100px);
-	margin: 0 30vh;
+	width: calc(80% - 100px);
+	left: 10%;
+	height: 100%;
 	z-index: 4;
 	-webkit-box-shadow: 11px 11px 42px -5px rgba(0,0,0,0.76);
 	-moz-box-shadow: 11px 11px 42px -5px rgba(0,0,0,0.76);
 	box-shadow: 11px 11px 42px -5px rgba(0,0,0,0.76);
+
+
 
 }
 
