@@ -24,7 +24,7 @@ body {
 a{
 	text-decoration:none;
 	color: white;
-	
+
 	}
 
 
@@ -191,7 +191,7 @@ a{
 }
 
 #coverimages {
-	background-color: white;
+	background-color: #cf4c2e;
 	 /*background-image: url("back1.png");
 	 background-size: 200vh;*/
 	float: right;
@@ -326,8 +326,8 @@ hr {
 	height: auto;
 	max-width: 100%;
 	margin-top: 40px;
-	/*-webkit-filter: grayscale(100%);
-    filter: grayscale(100%)contrast(150%) brightness(100%);*/
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%)contrast(150%) brightness(100%);
 		-webkit-box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
 	-moz-box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
 	box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
