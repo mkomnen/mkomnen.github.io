@@ -132,7 +132,7 @@ a{
 }
 
 
-#location{
+#contact{
 	margin-left: 2%;
 	position: fixed;
 	font-size: 7.5pt;
@@ -266,7 +266,7 @@ opacity: 1;
 	line-height: 12pt;
 	color: #ababab;
 	z-index: 3;
-	top: 65vh;
+	top: 72vh;
 		left: 0.5%;
     bottom:0vh;
 		width: 34%;
