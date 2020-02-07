@@ -291,8 +291,75 @@ a{
 
 
 
+.detail {
+	/* border-left: thick solid;
+	border-width: 15px;
+	border-color: black; */
+	font-family: Mandrel;
+	padding: 50px;
+	position: absolute;
+	align-self: center;
+	align-items: center;
+	align: center;
+	background-color: white;
+	font-size: 12pt;
+	line-height: 18pt;
+	color: black;
+	display: none;
+	overflow: scroll;
+	width: calc(70% - 100px);
+	left: 15%;
+	height: 75vh;
+	z-index: 400;
+	-webkit-box-shadow: 11px 11px 42px -5px rgba(0,0,0,0.76);
+	-moz-box-shadow: 11px 11px 42px -5px rgba(0,0,0,0.76);
+	box-shadow: 11px 11px 42px -5px rgba(0,0,0,0.76);
 
-  #maintext {
+}
+
+
+#maintext p {
+	padding-top: 3%;
+	padding-left: 15%;
+	padding-right: 18%;
+}
+
+
+
+
+.note {
+    margin-top: 15px;
+		padding-left: 40%;
+		padding-right: 18%;
+    text-align: right;
+	  font-family: 'SuisseIntl-Book', sans-serif;
+    font-size: 8pt;
+    line-height: 12pt;
+    color: grey;
+
+    float: right;
+}
+
+
+.close-button {
+	width: 40px;
+	height: 40px;
+	float: right;
+	position:sticky; top:0;
+	/* position: absolute;
+	right: 40px;
+	top: 40px; */
+	background: url("close.png") no-repeat;
+	background-size: cover;
+
+}
+
+
+
+
+
+
+  /* #maintext {
   	background-color: #e8e8e8;
   	letter-spacing: 0.3px;
   	/*border-left: thin solid black;
@@ -314,19 +381,11 @@ a{
       position:fixed;
       overflow-y:scroll;
       overflow-x:hidden;
-  }
+  } */
 
-  #maintext p {
-  	padding: 3%;
-  	padding-right: 9%;
-  }
 
-  #maintext h1 {
-  	padding-left: 3%;
-  	padding-top: 1%;
-  }
 
-  .text-title{
+  /* .text-title{
   	text-transform: uppercase;
   	color: black;
   	font-family: 'Cinzel', serif;
@@ -341,7 +400,7 @@ a{
   	baseline-shift: 40%;
   	padding-left: 3%;
 
-  }
+  } */
 
   /*.navigation a:hover {
     text-decoration: underline;

@@ -154,6 +154,9 @@ $(".close").click(function(e){
 	$('section.eventsinfo').hide();
 	$("#content-").css("visibility", "visible");
 
+	// hide the section
+	$('section.eventsinfo').hide();
+	$("#content-").css("visibility", "visible");
 
 	// hide the section
 	$('section.writingsinfo').hide();
@@ -191,3 +194,22 @@ function showtext(id) {
 
 // show the first content section
 showtext('amsterdam');
+
+
+
+$(".portfolio-item").click(function(e){
+
+	console.log("clicked: " + $(this).attr('id'));
+
+	// use variables for readability
+	var id = $(this).attr('id');
+	$("#content-" + id).show();
+
+	$("#content-" + id).css("top", $(document).scrollTop() + 50 );
+
+	console.log( $(document).scrollTop() )
+
+	$(".content").css("visibility", "hidden");
+	$(".close").removeClass("invisible");
+
+});
