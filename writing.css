@@ -6,7 +6,7 @@
 }
 
 html, body { height: 100% }
-html { background: red }
+html { background: black }
 body {
 
 	font-family: 'SuisseIntl-Book', sans-serif;
@@ -18,8 +18,14 @@ body {
 	line-height: 10pt;
 	color: #bcbcbc;
 	cursor: crosshair;
+	opacity: 1;
+		transition: 5s opacity;
 	}
 
+	body.fade-out {
+			opacity: 0;
+			transition: 2s opacity;
+	}
 
 a{
 	text-decoration:none;
@@ -353,55 +359,3 @@ a{
 	background-size: cover;
 
 }
-
-
-
-
-
-
-  /* #maintext {
-  	background-color: #e8e8e8;
-  	letter-spacing: 0.3px;
-  	/*border-left: thin solid black;
-  	border-top: thin solid #e8e8e8;
-  	border-bottom: thin solid #e8e8e8;
-  	border-right: thin solid black;
-  	border-width: 20px;*/
-  	padding: 3%;
-  	max-width: 80%;
-  	font-size: 9pt;
-  	line-height: 13pt;
-  	width: 58%;
-  	color: #1a1a1a;
-  	z-index: 3;
-  	top: 19vh;
-  	 left: 60vh;
-  	 bottom: 6vh;
-
-      position:fixed;
-      overflow-y:scroll;
-      overflow-x:hidden;
-  } */
-
-
-
-  /* .text-title{
-  	text-transform: uppercase;
-  	color: black;
-  	font-family: 'Cinzel', serif;
-  	font-size: 12pt;
-  }
-
-  .text-date {
-  	font-family: 'Cinzel', serif;
-  	color: red;
-  	font-weight: 300;
-  	letter-spacing: 0.5px;
-  	baseline-shift: 40%;
-  	padding-left: 3%;
-
-  } */
-
-  /*.navigation a:hover {
-    text-decoration: underline;
-  }*/

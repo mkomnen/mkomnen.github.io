@@ -1,3 +1,9 @@
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
+
+
 $( function( ) {
 console.log('hi');
 // activate the close button
@@ -70,6 +76,7 @@ $(".portfolio-item").click(function(e){
 	$(".close").removeClass("invisible");
 
 });
+
 
 
 
@@ -181,6 +188,7 @@ $(".close").click(function(e){
 
 	$( '#coverimages' ).focus( );
 	document.getElementById("coverimages").focus();
+
 });
 
 
