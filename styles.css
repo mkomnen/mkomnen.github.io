@@ -499,8 +499,11 @@ border-top: 20px solid black;
 	overflow: scroll;
 	top: 0px;
 	height: 100vh;
-	width: calc(80% - 100px);
-	left: 11%;
+	/* width: calc(80% - 100px); */
+	width: 85%;
+	align:center;
+	left: 6%;
+	/* left: 11%; */
 	z-index: 30;
 	-webkit-box-shadow: -5px -80px 285px 13px rgba(0,0,0,1);
 -moz-box-shadow: -5px -80px 285px 13px rgba(0,0,0,1);
