@@ -1,18 +1,18 @@
 * {
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 	cursor: crosshair;
+
 }
-html, body {
-	height: 100%
-}
-html {
-	background: black
-}
+
+html, body { height: 100% }
+html { background: black }
 body {
+
 	font-family: 'SuisseIntl-Book', sans-serif;
 	font-weight: 300;
 	background-color: black;
+
 	height: 100vh;
 	width: 100vw;
 	font-size: 9pt;
@@ -21,26 +21,36 @@ body {
 	cursor: crosshair;
 	position: fixed;
 	opacity: 1;
-	transition: 5s opacity;
-}
-body.fade-out {
-	opacity: 0;
-	transition: 2s opacity;
-}
-a {
-	text-decoration: none;
+    transition: 5s opacity;
+	}
+
+	body.fade-out {
+			opacity: 0;
+			transition: 2s opacity;
+	}
+
+a{
+	text-decoration:none;
 	color: white;
-}
-::-webkit-scrollbar {
-	display: none;
-}
-.scroll-left {
+
+	}
+
+
+
+	::-webkit-scrollbar {
+	    display: none;
+	}
+
+
+
+	.scroll-left {
 	height: 50px;
 	overflow: hidden;
 	position: sticky;
 	z-index: 1;
-}
-.scroll-left p {
+	}
+
+	.scroll-left p {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -49,48 +59,40 @@ a {
 	z-index: 1;
 	text-align: center;
 	/* Starting position */
-	-moz-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	transform: translateX(200%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	transform:translateX(200%);
 	/* Apply animation to this element */
 	-moz-animation: scroll-left 0s linear infinite;
 	-webkit-animation: scroll-left 40s linear infinite;
 	animation: scroll-left 50s linear infinite;
-}
-/* Move it (define the animation) */
+	}
+	/* Move it (define the animation) */
+	@-moz-keyframes scroll-left {
+	0% { -moz-transform: translateX(100%); }
+	100% { -moz-transform: translateX(-100%); }
+	}
+	@-webkit-keyframes scroll-left {
+	0% { -webkit-transform: translateX(100%); }
+	100% { -webkit-transform: translateX(-100%); }
+	}
+	@keyframes scroll-left {
+	0% {
+	-moz-transform: translateX(100%); /* Browser bug fix */
+	-webkit-transform: translateX(100%); /* Browser bug fix */
+	transform: translateX(100%);
+	}
+	100% {
+	-moz-transform: translateX(-100%); /* Browser bug fix */
+	-webkit-transform: translateX(-100%); /* Browser bug fix */
+	transform: translateX(-100%);
+	}
+	}
 
-@-moz-keyframes scroll-left {
-	0% {
-		-moz-transform: translateX(100%);
-	}
-	100% {
-		-moz-transform: translateX(-100%);
-	}
-}
-@-webkit-keyframes scroll-left {
-	0% {
-		-webkit-transform: translateX(100%);
-	}
-	100% {
-		-webkit-transform: translateX(-100%);
-	}
-}
-@keyframes scroll-left {
-	0% {
-		-moz-transform: translateX(100%);
-		/* Browser bug fix */
-		-webkit-transform: translateX(100%);
-		/* Browser bug fix */
-		transform: translateX(100%);
-	}
-	100% {
-		-moz-transform: translateX(-100%);
-		/* Browser bug fix */
-		-webkit-transform: translateX(-100%);
-		/* Browser bug fix */
-		transform: translateX(-100%);
-	}
-}
+
+
+
+
 .scroll-left {
 	top: 1vh;
 	font-size: 12pt;
@@ -98,6 +100,7 @@ a {
 	color: #d0d0d0;
 	z-index: 1;
 }
+
 #headinfo {
 	padding-left: 2%;
 	padding-top: 1.5%;
@@ -109,7 +112,9 @@ a {
 	letter-spacing: 0.5%;
 	z-index: 3;
 }
-#location {
+
+
+#location{
 	margin-left: 2%;
 	position: fixed;
 	font-size: 7.5pt;
@@ -121,9 +126,11 @@ a {
 	color: #ababab;
 	letter-spacing: 0.3px;
 	z-index: 200;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	overflow-y:scroll;
+	overflow-x:hidden;
 }
+
+
 #about {
 	margin-left: 18%;
 	font-size: 7.5pt;
@@ -135,10 +142,13 @@ a {
 	color: #ababab;
 	letter-spacing: 0.3px;
 	z-index: 200;
-	position: fixed;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	position:fixed;
+	overflow-y:scroll;
+	overflow-x:hidden;
+
 }
+
+
 #writings {
 	margin-left: 70vw;
 	font-family: 'Cinzel', serif;
@@ -154,58 +164,82 @@ a {
 	border: thin solid #1a1a1a;
 	border-width: 13px;
 }
+
 #downloads {
 	margin-left: 70vw;
 	top: 14vh;
 	color: #d0d0d0;
 	font-size: 7.5pt;
 	position: sticky;
+
 }
+
 #coverimages {
 	background-color: white;
+	 /*background-image: url("back1.png");
+	 background-size: 200vh;*/
 	float: right;
 	margin-top: 27vh;
+	/*border-left: solid white;
+	border-right: solid white;
+	border-width: 4.6vh;*/
+
 	width: 100%;
-	top: 0%;
-	left: 0%;
-	bottom: 0;
-	position: fixed;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	-webkit-box-shadow: 15px 18px 31px -14px rgba(201, 0, 0, 1);
-	-moz-box-shadow: 15px 18px 31px -14px rgba(201, 0, 0, 1);
-	box-shadow: 15px 18px 31px -14px rgba(201, 0, 0, 1);
+	 top: 0%;
+	 left: 0%;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+		/*-webkit-box-shadow: 12px 13px 0px -6px rgba(179,179,179,1);
+-moz-box-shadow: 12px 13px 0px -6px rgba(179,179,179,1);
+box-shadow: 12px 13px 0px -6px rgba(179,179,179,1);*/
+-webkit-box-shadow: 15px 18px 31px -14px rgba(201,0,0,1);
+-moz-box-shadow: 15px 18px 31px -14px rgba(201,0,0,1);
+box-shadow: 15px 18px 31px -14px rgba(201,0,0,1);
 }
+
+
+
 .tooltip {
-	position: relative;
-	float: top;
-	display: inline-block;
-	border-bottom: 1px solid black;
+position: relative;
+float: top;
+display: inline-block;
+border-bottom: 1px solid black;
 }
+
 .tooltip .tooltiptext {
-	visibility: hidden;
-	width: 65%;
-	background-color: black;
-	font-family: 'Cinzel', serif;
-	color: #fff;
-	text-align: center;
-	font-size: 20pt;
-	line-height: 22pt;
-	top: -5px;
-	left: 13%;
-	top: 45%;
-	padding: 0px 0;
-	opacity: 0;
-	transition: opacity 2s;
-	border: solid black 30px;
-	position: absolute;
-	z-index: 1;
+visibility: hidden;
+width: 65%;
+background-color: black;
+font-family: 'Cinzel', serif;
+color: #fff;
+text-align: center;
+font-size: 20pt;
+line-height: 22pt;
+top: -5px;
+left: 13%;
+top: 45%;
+padding: 0px 0;
+opacity: 0;
+transition: opacity 2s;
+border: solid black 30px;
+
+position: absolute;
+z-index: 1;
+
 }
+
 .tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
+visibility: visible;
+opacity: 1;
+
 }
+
+
+
 .collapsible {
+
 	letter-spacing: 0.2px;
 	font-family: 'Cinzel', serif;
 	padding-left: 1.6%;
@@ -216,24 +250,32 @@ a {
 	color: red;
 	z-index: 30;
 	border: 0;
+
+
 	top: 92vh;
-	bottom: 2vh;
-	width: 38%;
-	position: fixed;
-	overflow-y: scroll;
+
+    bottom:2vh;
+		width: 38%;
+    position:fixed;
+    overflow-y:scroll;
+
+
 }
+
 .active, .collapsible:hover {
-	color: white;
+  color: white;
 	border: 0;
 }
 
 .collapse {
-	display: none;
-	overflow: hidden;
+  display: none;
+  overflow: hidden;
 	border: 0;
 }
 
+
 #eventscontact {
+
 	letter-spacing: 0.2px;
 	border: thin solid black;
 	border-width: 30px;
@@ -243,32 +285,42 @@ a {
 	color: #ababab;
 	z-index: 3;
 	top: 50vh;
-	/* left: 1.7%; */
-	bottom: 10vh;
-	width: 34%;
-	position: fixed;
-	overflow-y: scroll;
-	overflow-x: hidden;
+		/* left: 1.7%; */
+    bottom:10vh;
+		width: 34%;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
 }
+
+
+
+
+
 
 .content {
 	position: relative;
+	/* max-width: 2000px; */
 	margin: 0 auto;
+
+
 }
 
 .overview {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 	margin-left: 15.5%;
 	max-width: 100%;
 	overflow: none;
-}
 
+}
 .portfolio-item {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
 }
 .portfolio-item img {
 	float: left;
@@ -276,33 +328,34 @@ a {
 	max-width: 100%;
 	margin-top: 40px;
 	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%)contrast(150%) brightness(100%);
-	-webkit-box-shadow: 11px 11px 42px -27px rgba(230, 230, 230, 1);
-	-moz-box-shadow: 11px 11px 42px -27px rgba(230, 230, 230, 1);
-	box-shadow: 11px 11px 42px -27px rgba(230, 230, 230, 1);
-}
+    filter: grayscale(100%)contrast(150%) brightness(100%);
+		-webkit-box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
+	-moz-box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
+	box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
 
-.portfolio-item img.right {
-	float: right
 }
+.portfolio-item img.right { float: right }
+
+
+
 .portfolio-item img:hover {
-	z-index: 40;
-	-webkit-filter: none;
-	/* Safari 6.0 - 9.0 */
+z-index: 40;
+-webkit-filter: none; /* Safari 6.0 - 9.0 */
 }
 
 .scrollbarhide {
 	height: 360px;
 	overflow: auto;
-}
+	}
 
+/* 	This is the scrollable content. It has a width that is much larger than the browser/viewport/screen width,
+	so that it is scrollable */
 
-
-/* 	This is the scrollable content. It has a width that is much larger than the browser/viewport/screen width, so that it is scrollable */
 
 .scroller {
-	width: 3900px;
+	width:3900px;
 }
+
 .image-item {
 	float: left;
 	width: 250px;
@@ -311,34 +364,47 @@ a {
 	padding: 6px;
 	position: relative;
 }
+
 .image-item p {
 	position: absolute;
 	bottom: 0px;
-	top: 10px;
+	top:10px;
 	right: 15px;
-	color: white;
+	color:white;
 	display: none;
+
 }
+
 .image-item img {
 	max-width: 100%;
 	max-height: 100%;
+
+
 }
+
+
+
 .title {
+
 	color: white;
 	font-family: 'SuisseIntl-Book', sans-serif;
 	font-size: 1.5em;
 	padding-top: 10px;
-	padding-left: 50px;
+		padding-left: 50px;
 }
+
 .detail {
+
 	/* font-family: 'Mandrel'; */
 	font-family: 'SuisseIntl-Book', sans-serif;
 	position: absolute;
 	margin-top: 0;
-	padding-top: 30px;
-	padding-left: 25px;
-	padding-right: 25px;
-	border-top: 20px solid black;
+		padding-top: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
+
+border-top: 20px solid black;
+
 	background-color: black;
 	font-size: 10pt;
 	line-height: 16pt;
@@ -348,19 +414,21 @@ a {
 	top: 0px;
 	height: 100vh;
 	/* width: calc(80% - 100px); */
-	/* left: 11%; */
 	width: 85%;
-	align: center;
+	align:center;
 	left: 6%;
+	/* left: 11%; */
 	z-index: 30;
-	-webkit-box-shadow: -5px -80px 285px 13px rgba(0, 0, 0, 1);
-	-moz-box-shadow: -5px -80px 285px 13px rgba(0, 0, 0, 1);
-	box-shadow: -5px -80px 285px 13px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: -5px -80px 285px 13px rgba(0,0,0,1);
+-moz-box-shadow: -5px -80px 285px 13px rgba(0,0,0,1);
+box-shadow: -5px -80px 285px 13px rgba(0,0,0,1);
 }
-.descriptiontext {
+
+.descriptiontext{
 	padding-left: 15%;
 	padding-right: 16%;
 }
+
 .date {
 	font-family: 'Cinzel', serif;
 	color: red;
@@ -368,8 +436,10 @@ a {
 	width: 100px;
 	letter-spacing: 0.5px;
 	baseline-shift: 40%;
-	padding: 50px;
+		padding: 50px;
+
 }
+
 .underscore {
 	font-family: 'Cinzel', serif;
 	color: red;
@@ -377,19 +447,35 @@ a {
 	letter-spacing: 0.5px;
 	baseline-shift: 40%;
 }
+
+
+
+
+
+
+
+
+
+
+
 .scrollable {
 	height: 500px;
 	width: 800px;
 	overflow: auto;
 }
+
 .detail h1 {
 	font-size: 11pt;
 	line-height: 25pt;
 }
-.detail p {}
+
+.detail p {
+}
+
 .detail .artwork {
 	width: 100%;
 }
+
 .video {
 	position: relative;
 	width: 100%;
@@ -397,16 +483,10 @@ a {
 }
 .video iframe {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0; left: 0;
 	width: 100%;
 	height: 100%;
 }
-
-
-/* replace margins with paddings */
-/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
-
 
 
 
@@ -415,240 +495,339 @@ a {
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(42800% / 893 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
+
 #project2 {
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(44500% / 893 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
+
 #project3 {
+
 	position: relative;
 	float: right;
 	padding: 30px 15px 30px 30px;
 	width: calc(45500% / 980 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project4 {
+
+#project4{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(52500% / 980 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project5 {
+
+#project5{
 	position: relative;
 	float: left;
 	padding: 30px 30px 30px 30px;
 	width: calc(39500% / 1000 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project6 {
+
+#project6{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(60500% / 1000 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project7 {
+
+
+
+
+#project7{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(54500% / 940 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project8 {
+
+#project8{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(39500% / 940 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project9 {
+
+
+
+
+#project9{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(44500% / 893 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project10 {
+
+#project10{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(44800% / 893 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
+
 }
 
-#project11 {
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
+#project11{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(40000% / 1000 - 4px);
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-#project12 {
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(55000% / 1000 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
 
-#project13 {
+#project12{
+	position: relative;
+	float: left;
+	padding: 30px 15px 30px 30px;
+	width: calc(55000% / 1000 - 4px);
+
+	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
+	filter: drop-shadow(2px 2px 2px #c90000);
+}
+
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
+#project13{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(51000% / 1010 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project14 {
+
+#project14{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(40500% / 893 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
 
-#project15 {
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
+#project15{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(99500% / 995 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
 
-#project16 {
+
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
+#project16{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(55000% / 1000 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project17 {
+
+#project17{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(43000% / 1010 - 4px);
+
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
 
-#project18 {
+
+
+/* replace margins with paddings */
+/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
+
+#project18{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(42500% / 970 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project19 {
+
+#project19{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(50000% / 970 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project20 {
+
+#project20{
 	position: relative;
 	float: right;
 	padding: 30px 15px 30px 30px;
 	width: calc(99500% / 995 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project21 {
+
+
+#project21{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 15px;
 	width: calc(44000% / 1010 - 4px);
+
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project22 {
+
+
+#project22{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(55000% / 1000 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project23 {
+
+#project23{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(49000% / 970 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project24 {
+
+#project24{
 	position: relative;
 	float: right;
 	padding: 30px 15px 30px 100px;
 	width: calc(46000% / 1010 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project25 {
+
+#project25{
 	position: relative;
 	float: left;
 	/*margin-top: 30px;*/
 	padding: 30px 30px 30px 100px;
 	width: calc(52000% / 970 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project26 {
+
+#project26{
 	position: relative;
 	float: left;
 	margin-top: 100px;
 	padding: 30px 30px 30px 30px;
 	width: calc(45000% / 1010 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
 	filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project27 {
+
+
+#project27{
 	position: relative;
 	float: right;
 	padding: 30px 30px 30px 90px;
 	width: calc(52500% / 970 - 4px);
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #c90000);
+ 	 filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project28 {
+
+#project28{
 	position: relative;
 	float: left;
 	padding: 30px 15px 30px 30px;
 	width: calc(42500% / 970 - 4px);
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+
+	  -webkit-filter: drop-shadow(2px 2px 2px #c90000);
+ 	 filter: drop-shadow(2px 2px 2px #c90000);
 }
-#project29 {
+
+
+#project29{
 	position: relative;
 	float: right;
 	padding: 30px 15px 30px 30px;
 	width: calc(99500% / 995 - 4px);
+
 	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
+ filter: drop-shadow(2px 2px 2px #c90000);
 }
+
+
+
+
+
+
+
+
+
+
+
 #content-writings {
 	border-top: thin solid;
 	border-bottom: thin solid;
@@ -668,10 +847,13 @@ a {
 	z-index: 4;
 	overflow: scroll;
 	z-index: 200;
-	-webkit-box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
-	box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
+
+-webkit-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+-moz-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 }
+
+
 #content-about {
 	border-top: thin solid;
 	border-bottom: thin solid;
@@ -691,10 +873,12 @@ a {
 	z-index: 4;
 	overflow: scroll;
 	z-index: 200;
-	-webkit-box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
-	box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
+
+-webkit-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+-moz-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 }
+
 #content-contact {
 	border-top: thin solid;
 	border-bottom: thin solid;
@@ -713,26 +897,35 @@ a {
 	margin-right: 50%;
 	z-index: 4;
 	overflow: scroll;
-	-webkit-box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
-	box-shadow: 9px 5px 5px -2px rgba(0, 0, 0, 0.15);
+
+-webkit-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+-moz-box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
+box-shadow: 9px 5px 5px -2px rgba(0,0,0,0.15);
 }
+
+
 .close-button {
 	width: 30px;
 	height: 30px;
-	position: absolute;
+	position:absolute;
 	right: 10px;
 	top: 10px;
 	background: url("close.png") no-repeat;
 	background-size: cover;
-	border: 1px solid rgba(255, 255, 255, 0);
+	border: 1px solid rgba(255,255,255,0);
+
 }
+
+
+
 .close-button:hover {
 	border: 1px solid black;
 }
+
 .detail {
 	z-index: 200;
 }
+
 .close {
 	position: fixed;
 	top: 0;
@@ -743,6 +936,7 @@ a {
 	background: blue;
 	opacity: 0;
 }
+
 .invisible {
 	display: none;
 }
