@@ -2,6 +2,16 @@ $(function() {
     $('body').removeClass('fade-out');
 });
 
+function preloaderFadeOutInit(){
+$('.preloader').fadeOut('slow');
+$('body').attr('id','');
+}
+// Window load function
+jQuery(window).on('load', function () {
+(function ($) {
+preloaderFadeOutInit();
+})(jQuery);
+});
 
 
 $( function( ) {
@@ -167,6 +177,8 @@ $(".close").click(function(e){
 	$( '#coverimages' ).focus( );
 	document.getElementById("coverimages").focus();
 
+
+
 });
 
 
@@ -218,7 +230,6 @@ $(".portfolio-item").click(function(e){
 
 
 
-
 // <FILTER>
 filterSelection("all")
 function filterSelection(c) {
@@ -261,4 +272,16 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("eventscontact");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }

@@ -29,12 +29,44 @@ body {
 			transition: 2s opacity;
 	}
 
-a{
-	text-decoration:none;
-	color: white;
-
+	.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right:0;
+	width: 100%;
+	height: 100vh;
+	z-index: 99999999;
+	background-image: url('loader.svg'); /* your icon gif file path */
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: center;
 	}
 
+	#loaded {
+	height: 100% !important;
+	overflow: hidden !important;
+	}
+
+#mobile {
+ 	display: none;
+}
+
+@media only screen and (max-device-width:480px) {
+    /* show the popup */
+    #mobile {	display: block;}
+}
+
+a{
+	color: #bcbcbc;
+	text-decoration: none;
+	/* text-decoration: overline; */
+	}
+
+a:hover {
+	color: #bd2626;
+}
 
 
 	::-webkit-scrollbar {
@@ -151,14 +183,15 @@ a{
 
 #writings {
 	margin-left: 70vw;
-	font-family: 'Cinzel', serif;
+	font-family: 'SuisseIntl', sans-serif;
 	top: 8vh;
 	position: fixed;
 	font-size: 10pt;
+	font-weight: 500;
 	line-height: 11pt;
 	width: 80%;
 	color: #d0d0d0;
-	letter-spacing: 0.3px;
+	letter-spacing: 0.5px;
 	z-index: 3;
 	background-color: #1a1a1a;
 	border: thin solid #1a1a1a;
@@ -176,16 +209,18 @@ a{
 
 #coverimages {
 	background-color: white;
-	float: right;
-	margin-top: 27vh;
-	/*border-left: solid white;
-	border-right: solid white;
-	border-width: 4.6vh;*/
+	float:right;
+	margin-top: 16.5vh;
+	display: grid;
+   grid-template-columns:auto(2, 1fr);
+   gap: 15px;
+   /* grid-auto-rows: minmax(100px, auto); */
 
 	width: 100%;
 	 top: 0%;
 	 left: 0%;
     bottom:0;
+		padding-left: 15vh;
     position:fixed;
     overflow-y:scroll;
     overflow-x:hidden;
@@ -193,6 +228,12 @@ a{
 -webkit-box-shadow: 15px 18px 31px -14px rgba(201,0,0,1);
 -moz-box-shadow: 15px 18px 31px -14px rgba(201,0,0,1);
 box-shadow: 15px 18px 31px -14px rgba(201,0,0,1);
+
+
+/*border-left: solid white;
+border-right: solid white;
+border-width: 4.6vh;*/
+
 }
 
 
@@ -207,20 +248,19 @@ border-bottom: 1px solid black;
 
 .tooltip .tooltiptext {
 visibility: hidden;
-width: 65%;
+width: 88.5%;
 background-color: black;
-font-family: 'Cinzel', serif;
+font-family: 'SuisseIntl', sans-serif;
 color: #fff;
-text-align: center;
-font-size: 20pt;
+text-align: justify;
+font-size: 12pt;
 line-height: 22pt;
-top: -5px;
-left: 13%;
-top: 45%;
+left: 0%;
+top: 82.3%;
 padding: 0px 0;
 opacity: 0;
 transition: opacity 2s;
-border: solid black 30px;
+border: solid black 25px;
 
 position: absolute;
 z-index: 1;
@@ -234,24 +274,24 @@ opacity: 1;
 }
 
 
-
+/*
 .collapsible {
 
 	letter-spacing: 0.2px;
-	font-family: 'Cinzel', serif;
+	font-family: 'SuisseIntl', sans-serif;
 	padding-left: 1.6%;
 	text-align: left;
-	background-color: black;
-	font-size: 10pt;
+	background-color: transparent;
+	font-size: 60pt;
 	line-height: 12pt;
-	color: red;
+	color: black;
 	z-index: 30;
 	border: 0;
 
 
-	top: 92vh;
+	top: 88vh;
 
-    bottom:2vh;
+    bottom:3vh;
 		width: 38%;
     position:fixed;
     overflow-y:scroll;
@@ -260,47 +300,96 @@ opacity: 1;
 }
 
 .active, .collapsible:hover {
-  color: white;
+
+	color: #bd2626;
 	border: 0;
-}
+} */
 
 .collapse {
+
   display: none;
   overflow: hidden;
 	border: 0;
 }
 
+.aboutbutton {
+	letter-spacing: 0.2px;
+	font-family: 'SuisseIntl', sans-serif;
+	padding-left: 1.6%;
+	text-align: left;
+	background-color: transparent;
+	font-size: 60pt;
+	line-height: 12pt;
+	color: black;
+	z-index: 30;
+	border: 0;
+
+	top: 88vh;
+    bottom:2.5vh;
+		width: 38%;
+    position:fixed;
+    overflow-y:scroll;
+}
+
+.active, .aboutbutton:hover {
+
+	color: #bd2626;
+	border: 0;
+}
+
+#aboutbuttonclose {
+	letter-spacing: 0.2px;
+	font-family: 'SuisseIntl', sans-serif;
+	padding-left: 1.6%;
+	text-align: left;
+	background-color: transparent;
+	font-size: 60pt;
+	line-height: 12pt;
+	color: #bcbcbc;
+	z-index: 3000;
+	border: 0;
+
+	top: 10.5vh;
+		left:61vh;
+		width: 38%;
+		position:fixed;
+		overflow-y:scroll;
+}
+
+#aboutbuttonclose :hover {
+	color: #bd2626;
+	border: 0;
+}
 
 #eventscontact {
 
-	letter-spacing: 0.2px;
+	letter-spacing: 0.4px;
 	border: thin solid black;
-	border-width: 30px;
+	border-width: 40px;
 	background-color: black;
-	font-size: 8pt;
-	line-height: 12pt;
-	color: #ababab;
-	z-index: 3;
-	top: 50vh;
+	font-size: 9.5pt;
+	line-height: 14pt;
+	color: #bcbcbc;
+	z-index: 4000;
+	top: 10vh;
 		/* left: 1.7%; */
-    bottom:10vh;
-		width: 34%;
+    bottom:0vh;
+		width: 35%;
     position:fixed;
     overflow-y:scroll;
     overflow-x:hidden;
 
 }
 
-
-
-
-
-
-
-.container {
-  overflow: hidden;
-
+#contactinf {
+	padding-left: 66%;
 }
+
+
+
+
+
+
 
 .filterDiv {
 
@@ -318,11 +407,12 @@ opacity: 1;
 }
 
 .container {
-  margin-top: 20px;
+
+	margin-top: 20px;
 	margin-right: 20px;
 	margin-left: 10%;
 max-width: 100%;
-
+overflow: hidden;
 /* grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr)); */
 
 
@@ -338,15 +428,7 @@ overflow-x: none;
 }
 
 
-/*
-@media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
-}
-@media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
-} */
 
-/* Style the buttons */
 
 
 .btn {
@@ -375,7 +457,7 @@ overflow-x: none;
 
 #all {
 	margin-left: 2%;
-	 top: 31vh;
+	 top: 21vh;
 	 border: black solid 1pt;
 	 padding: 3pt;
 	 background-color: black;
@@ -384,7 +466,7 @@ overflow-x: none;
 
 	#print {
 		margin-left: 3.5%;
-		 top: 35vh;
+		 top: 25vh;
 		 border: white solid 0.1pt;
 		padding: 0.1pt;
 		background-color: white;
@@ -393,7 +475,7 @@ overflow-x: none;
 
 		#exhib {
 			margin-left: 3.5%;
-			 top: 37.5vh;
+			 top: 27.5vh;
 			 border: white solid 0.1pt;
 			padding: 0.1pt;
 			background-color: white;
@@ -402,7 +484,7 @@ overflow-x: none;
 
 			#type {
 				margin-left: 3.5%;
-				 top: 40vh;
+				 top: 30vh;
 				 border: white solid 0.1pt;
 				padding: 0.1pt;
 				background-color: white;
@@ -411,7 +493,7 @@ overflow-x: none;
 
 				#researchwork {
 					margin-left: 3.5%;
-					 top: 42.5vh;
+					 top: 32.5vh;
 					 border: white solid 0.1pt;
 					padding: 0.1pt;
 					background-color: white;
@@ -420,7 +502,7 @@ overflow-x: none;
 
 					#brand {
 						margin-left: 3.5%;
-						 top: 45vh;
+						 top: 35vh;
 						 border: white solid 0.1pt;
 						padding: 0.1pt;
 						background-color: white;
@@ -428,7 +510,7 @@ overflow-x: none;
 
 					#multimedia {
 						margin-left: 3.5%;
-						 top: 47.5vh;
+						 top: 37.5vh;
 						 border: white solid 0.1pt;
 						padding: 0.1pt;
 						background-color: white;
@@ -458,11 +540,12 @@ overflow-x: none;
 
 .content {
 	position: relative;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 
 		display: inline-block;
 		/* flex-wrap: wrap; */
 		/* justify-content: center; */
+
 
 
 
@@ -483,9 +566,12 @@ justify-content: center;
 
 
 
+
 }
 .portfolio-item {
 
+
+	align-self: right;
 		-webkit-box-sizing: border-box;
 	       -moz-box-sizing: border-box;
 	            box-sizing: border-box;
@@ -506,13 +592,9 @@ justify-content: center;
 	vertical-align: middle;
 	justify-content: center;
 	align-self:center;
-	-webkit-filter: grayscale(100%);
-    filter: grayscale(100%)contrast(100%) brightness(100%);
-		-webkit-box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
-	-moz-box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
-	box-shadow: 11px 11px 42px -27px rgba(230,230,230,1);
-
+filter: saturate(0%);
 }
+
 .portfolio-item img.right { float: right }
 
 
@@ -611,7 +693,7 @@ background-color: white;
 
 .detail {
 
-	/* font-family: 'Mandrel'; */
+
 	font-family: 'SuisseIntl-Book', sans-serif;
 	position: absolute;
 	margin-top: 0;
@@ -709,336 +791,6 @@ border-top: 20px solid black;
 	width: 100%;
 	height: 100%;
 }
-
-/*
-
-#project1 {
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(42800% / 893 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project2 {
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(44500% / 893 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project3 {
-
-	position: relative;
-	float: right;
-	padding: 30px 15px 30px 30px;
-	width: calc(45500% / 980 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project4{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(52500% / 980 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project5{
-	position: relative;
-	float: left;
-	padding: 30px 30px 30px 30px;
-	width: calc(39500% / 1000 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project6{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(60500% / 1000 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-
-
-
-#project7{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(54500% / 940 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project8{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(39500% / 940 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-
-
-
-#project9{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(44500% / 893 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project10{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(44800% / 893 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-
-} */
-
-
-/* replace margins with paddings */
-/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
-/*
-#project11{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(40000% / 1000 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project12{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(55000% / 1000 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-
-/* replace margins with paddings */
-/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
-/*
-#project13{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(51000% / 1010 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project14{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(40500% / 893 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-
-/* replace margins with paddings */
-/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
-
-/* #project15{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(99500% / 995 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-
-
-/* replace margins with paddings */
-/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
-
-/* #project16{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(55000% / 1000 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project17{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(43000% / 1010 - 4px);
-
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-
-
-/* replace margins with paddings */
-/*" width of image+paddingleft/right devided by sum of the total width of the images/paddings in one row"*/
-/*
-#project18{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(42500% / 970 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project19{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(50000% / 970 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project20{
-	position: relative;
-	float: right;
-	padding: 30px 15px 30px 30px;
-	width: calc(99500% / 995 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-
-#project21{
-	position: relative;
-	float: right;
-	padding: 30px 30px 30px 15px;
-	width: calc(44000% / 1010 - 4px);
-
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-
-#project22{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(55000% / 1000 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project23{
-	position: relative;
-	float: left;
-	padding: 30px 15px 30px 30px;
-	width: calc(49000% / 970 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project24{
-	position: relative;
-	float: right;
-	padding: 30px 15px 30px 100px;
-	width: calc(46000% / 1010 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-}
-
-#project25{
-	position: relative;
-	float: left;
-	padding: 30px 30px 30px 100px;
-	width: calc(52000% / 970 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-/* #project26{
-	position: relative;
-	float: left;
-	margin-top: 100px;
-
-	width: 60%;
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
-	filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-/*
-#project27{
-	position: relative;
-	float: left;
-	margin: 30px ;
-	width: 60%;
-
-	  -webkit-filter: drop-shadow(2px 2px 2px #c90000);
- 	 filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-/* #project28{
-	position: relative;
-	float: left;
-	margin: 30px ;
-	width: 50%;
-
-
-	  -webkit-filter: drop-shadow(2px 2px 2px #c90000);
- 	 filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
-/*
-#project29{
-	position: relative;
-	float: left;
-	margin: 30px ;
-	width: calc(99500% / 995 - 4px);
-
-	-webkit-filter: drop-shadow(2px 2px 2px #c90000);
- filter: drop-shadow(2px 2px 2px #c90000);
-} */
-
 
 
 
